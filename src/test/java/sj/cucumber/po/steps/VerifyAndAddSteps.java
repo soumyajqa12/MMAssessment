@@ -41,13 +41,6 @@ public class VerifyAndAddSteps {
 		page.openUrl();
 	} 
 
-	@Then("^All the labels and values should exist$") 
-	public void labelsAndvalues() { 
-		 
-		 Assert.assertTrue(page.getLblTtlElement().isDisplayed());
-		 Assert.assertTrue(page.getTxtTtlElement().isDisplayed());
-		
-	}
 	
 	@Then("^Verify the right count of values appear on the screen$")
 	public void rightCount() {
